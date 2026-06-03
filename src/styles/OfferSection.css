@@ -1,0 +1,35 @@
+.offer-section {
+  margin: 60px;
+  background: black;
+  color: white;
+  border-radius: 25px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer-text {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.mail-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mail-box input {
+  width: 350px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+}
+
+.mail-box button {
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}

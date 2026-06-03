@@ -1,0 +1,654 @@
+{
+  "products": [
+    {
+      "id": "HRBGYZ9L",
+      "brand": "VERSACE",
+      "title": "VERSACE Men's Graphic T-Shirt",
+      "price": 39.99,
+      "description": "VERSACE Men's Graphic T-Shirt. A premium graphic T-shirt crafted from soft breathable cotton with a modern fit. Features high-quality printed artwork, comfortable all-day wear, and durable stitching that makes it ideal for casual outings and everyday styling.",
+      "category": "men's clothing",
+      "image": "https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dwfe8f5605/original/90_1013944-1A16715_1B000_10_Embroidered~Cotton~Jersey~Slim~T~Shirt~-T~Shirts~~Polos-Versace-online-store_0_0.jpg?sw=850&q=85&strip=true",
+      "rating": {
+        "rate": 4.1,
+        "count": 100
+      }
+    },
+    {
+      "id": "NTMU927B",
+      "brand": "ZARA",
+      "title": "ZARA Men's Polo Shirt",
+      "price": 54.99,
+      "description": "ZARA Men's Polo Shirt. A classic polo shirt designed with a refined collar, breathable fabric, and a comfortable tailored fit. Perfect for smart-casual occasions, office wear, or weekend outings.",
+      "category": "men's clothing",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRLmn4v7c38L-WH4C7hIhmW_WDxlHNrJglumxlej0lJuMU9fUSWRKv0ZbrpmQWCE7V07NDQk0_0PzVZ2hu16H54I_uSJj1hxwkb_7pYdCVyfYwAWixtTukClXA",
+      "rating": {
+        "rate": 4.2,
+        "count": 112
+      }
+    },
+    {
+      "id": "T8WABOW0",
+      "brand": "GUCCI",
+      "title": "GUCCI Men's Slim Fit Shirt",
+      "price": 69.99,
+      "description": "GUCCI Men's Slim Fit Shirt. A stylish slim-fit shirt tailored for a sharp silhouette. Made from lightweight fabric with a polished finish, offering comfort, versatility, and a sophisticated look.",
+      "category": "men's clothing",
+      "image": "https://img.tatacliq.com/images/i28/1316Wx1468H/MP000000029237807_1316Wx1468H_202511201508421.jpeg",
+      "rating": {
+        "rate": 4.3,
+        "count": 124
+      }
+    },
+    {
+      "id": "V9SQUKMQ",
+      "brand": "PRADA",
+      "title": "PRADA Men's Denim Jacket",
+      "price": 84.99,
+      "description": "PRADA Men's Denim Jacket. A timeless denim jacket featuring durable construction, comfortable lining, and versatile styling. Ideal for layering through every season while adding a fashionable edge.",
+      "category": "men's clothing",
+      "image": "https://cdn.media.amplience.net/i/frasersdev/60321618_o.jpg?v=20251030130502",
+      "rating": {
+        "rate": 4.4,
+        "count": 136
+      }
+    },
+    {
+      "id": "HLPLS63W",
+      "brand": "Calvin Klein",
+      "title": "Calvin Klein Women's Summer Dress",
+      "price": 99.99,
+      "description": "Calvin Klein Women's Summer Dress. A lightweight summer dress designed for comfort and elegance. Features breathable fabric, a flattering fit, and a stylish design suitable for vacations, brunches, and special occasions.",
+      "category": "women's clothing",
+      "image": "https://thenotebookofficial.com/cdn/shop/products/TNS-DR-79_1.png?v=1744802051&width=1000",
+      "rating": {
+        "rate": 4.5,
+        "count": 148
+      }
+    },
+    {
+      "id": "SG4E00DZ",
+      "brand": "H&M",
+      "title": "H&M Women's Floral Dress",
+      "price": 114.99,
+      "description": "H&M Women's Floral Dress. A beautifully designed floral dress with vibrant patterns and a comfortable silhouette. Perfect for casual gatherings, daytime events, and seasonal wear.",
+      "category": "women's clothing",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ5EMLls8QCmtyMNubclv0rvsfdIZ6MOhUIL-pF0AtfP4psBQfb8nnAyrtmMzSqS4sPN1XLMcwU1kOZj8NEk-Yv8UClF6vkwcOko6Ap236Q6t-F9d0TDIuYXRqsELEV7dFrby756VI&usqp=CAc",
+      "rating": {
+        "rate": 4.6,
+        "count": 160
+      }
+    },
+    {
+      "id": "7EECNEEZ",
+      "brand": "VERSACE",
+      "title": "VERSACE Women's Oversized Blazer",
+      "price": 129.99,
+      "description": "VERSACE Women's Oversized Blazer. A contemporary oversized blazer featuring structured tailoring and premium fabric. Offers a sophisticated look that transitions effortlessly from workwear to evening fashion.",
+      "category": "women's clothing",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS02_xiDZR07oC-MXirsQJE8vKURrfae26YUYJxEu30eHbDKp5DKmELvzuKwI3XFitk2bsIF_Xfzni2JcMwOIXVIH7TiZ4RDvOzMbs7h_3ORJyij2LA6SMq3ajz&usqp=CAc",
+      "rating": {
+        "rate": 4.7,
+        "count": 172
+      }
+    },
+    {
+      "id": "NJFTAKHL",
+      "brand": "ZARA",
+      "title": "ZARA Women's Knit Sweater",
+      "price": 144.99,
+      "description": "ZARA Women's Knit Sweater. A soft knit sweater crafted for warmth, comfort, and everyday versatility. Features a cozy texture and modern fit suitable for cooler weather.",
+      "category": "women's clothing",
+      "image": "https://image.hm.com/assets/hm/d2/67/d267fdf884396ebceecf26adcf6aa2e7e2a39e81.jpg?imwidth=1260",
+      "rating": {
+        "rate": 4.8,
+        "count": 184
+      }
+    },
+    {
+      "id": "6SCRLHB5",
+      "brand": "GUCCI",
+      "title": "GUCCI Leather Shoulder Bag",
+      "price": 159.99,
+      "description": "GUCCI Leather Shoulder Bag. An elegant leather shoulder bag with spacious compartments and premium craftsmanship. Designed to combine style, durability, and practical everyday storage.",
+      "category": "bags",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSqnIAlNII9OqdhCMaGpxykky3IQYoZjn6I_s2oMFC0UlcBOVtE14Myb9eFXdHDaeWjDFuz3WjpapDqO9AZ7VjS4danrb4w-ih6GaqtmUQzQjSr4bnMIPJIHrp7CBzpPrV0R7CIqx8&usqp=CAc",
+      "rating": {
+        "rate": 4.9,
+        "count": 196
+      }
+    },
+    {
+      "id": "9N5BXF0C",
+      "brand": "PRADA",
+      "title": "PRADA Luxury Handbag",
+      "price": 174.99,
+      "description": "PRADA Luxury Handbag. A luxury handbag featuring premium materials, refined detailing, and a spacious interior. An ideal accessory for elevating both casual and formal outfits.",
+      "category": "bags",
+      "image": "https://www.houseofkiyaara.com/cdn/shop/files/kiyaara-DTB-NB-HOK-0002-Dawn-Tote-Bag-Beige-01_579eb06c-45a8-41b8-949d-1a0faa9fd827.jpg?v=1771962267&width=1000",
+      "rating": {
+        "rate": 4.1,
+        "count": 208
+      }
+    },
+    {
+      "id": "8GM0NO1M",
+      "brand": "Calvin Klein",
+      "title": "Calvin Klein Travel Backpack",
+      "price": 189.99,
+      "description": "Calvin Klein Travel Backpack. A durable travel backpack with multiple storage compartments, comfortable straps, and a lightweight design. Perfect for commuting, travel, and daily use.",
+      "category": "bags",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vIM7iDaPE36kDkHcTYtTD-QrldP-7mCozg&s",
+      "rating": {
+        "rate": 4.2,
+        "count": 220
+      }
+    },
+    {
+      "id": "JP1TO5IN",
+      "brand": "H&M",
+      "title": "H&M Classic Tote Bag",
+      "price": 204.99,
+      "description": "H&M Classic Tote Bag. A versatile tote bag designed with ample storage space and sturdy handles. Suitable for shopping, work, travel, and everyday essentials.",
+      "category": "bags",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPgEt0RduqBgnj9Fxz6E2oD-uho8NYTCjf-w&s",
+      "rating": {
+        "rate": 4.3,
+        "count": 232
+      }
+    },
+    {
+      "id": "PVBEZ28B",
+      "brand": "VERSACE",
+      "title": "VERSACE Casual Sneakers",
+      "price": 219.99,
+      "description": "VERSACE Casual Sneakers. Comfortable casual sneakers featuring cushioned support, durable construction, and modern styling. Ideal for daily wear and active lifestyles.",
+      "category": "footwear",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTaCYI22eA6QzZ6Q9Lsvk1A6ZY_tvCVO6cQcfmTO9Le_B24SBvo6h4qHaKdV01tj3nUFPAj7fenTefwbFFJHq2zIOTmKIOB7pgvNTi5pk_sJTpdnIg2PQy14vy52cO7f2A2NhaNfoM&usqp=CAc",
+      "rating": {
+        "rate": 4.4,
+        "count": 244
+      }
+    },
+    {
+      "id": "WG8C09U3",
+      "brand": "ZARA",
+      "title": "ZARA Running Shoes",
+      "price": 234.99,
+      "description": "ZARA Running Shoes. Performance-inspired running shoes with responsive cushioning, breathable materials, and reliable traction for enhanced comfort and movement.",
+      "category": "footwear",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6yPbNCICheeUDosHo5iBmCCBIxDKU7LJMcQ&s",
+      "rating": {
+        "rate": 4.5,
+        "count": 256
+      }
+    },
+    {
+      "id": "HG3FYZUJ",
+      "brand": "GUCCI",
+      "title": "GUCCI Leather Loafers",
+      "price": 249.99,
+      "description": "GUCCI Leather Loafers. Premium leather loafers crafted with attention to detail and lasting comfort. Perfect for business attire, formal occasions, and smart-casual looks.",
+      "category": "footwear",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQsJm6ztfibu14t0e492jb4YmgFlxR7B_zUKuAIUc0U5z12tSNySMxmpzAStBpXqeNtWtN7AaPHuBdqSkmyzaW685f3GA9yaa2UBuFtEu5wrETQ4avBRBB-ikIhw7tC-QckAn5R0g&usqp=CAc",
+      "rating": {
+        "rate": 4.6,
+        "count": 268
+      }
+    },
+    {
+      "id": "U1G62FLM",
+      "brand": "PRADA",
+      "title": "PRADA Fashion Sandals",
+      "price": 264.99,
+      "description": "PRADA Fashion Sandals. Stylish fashion sandals designed for comfort and effortless elegance. Features supportive construction and versatile styling for warm-weather wear.",
+      "category": "footwear",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRLZOy4jvjT7TEIXby05emjhm9t34ZTB8M3X8e1dsKJQuTMzZTOEOPeR6h7hX7P1Q3FHOLUieG6D7Vb3Ag8VylOtaQFVt-B1ixNamWhQl043KXIPhtizhw5XS_Cr9cbhGUnLYChbg&usqp=CAc",
+      "rating": {
+        "rate": 4.7,
+        "count": 280
+      }
+    },
+    {
+      "id": "MFPZWFCF",
+      "brand": "Calvin Klein",
+      "title": "Calvin Klein Leather Belt",
+      "price": 279.99,
+      "description": "Calvin Klein Leather Belt. A genuine leather belt crafted with premium materials and a durable buckle. Designed to complement both casual and formal wardrobes.",
+      "category": "accessories",
+      "image": "https://calvinklein-eu.scene7.com/is/image/CalvinKleinEU/K50K510075_0GJ_main?$b2c_uplp_listing_2560$",
+      "rating": {
+        "rate": 4.8,
+        "count": 292
+      }
+    },
+    {
+      "id": "BYYIV5TX",
+      "brand": "H&M",
+      "title": "H&M Designer Sunglasses",
+      "price": 294.99,
+      "description": "H&M Designer Sunglasses. Fashion-forward designer sunglasses offering UV protection, lightweight comfort, and a sophisticated look suitable for any season.",
+      "category": "accessories",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTBd_KNuspZqLtUOF0NdLGs1q314P92iMmW1mi22V3bjLhshZrIOg_mcqWXACBGC3OX1VDghHPJyuc8SWpQAU0CqmYTpFVbVe_-V4C7_Rz6KHTVP69k6rzg6lUYDaPbRK404Row-3M&usqp=CAc",
+      "rating": {
+        "rate": 4.9,
+        "count": 304
+      }
+    },
+    {
+      "id": "W10QPFBR",
+      "brand": "VERSACE",
+      "title": "VERSACE Premium Wallet",
+      "price": 309.99,
+      "description": "VERSACE Premium Wallet. A premium wallet featuring organized compartments, durable craftsmanship, and a sleek profile that combines practicality with refined style.",
+      "category": "accessories",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTxYtFAI_DtLRJ-Mf4FfDXgwOEcAV-oC6LBo6mxEk_3EN0Qz0PBvyLlruA08MGi2YFCrjOhHz5_0VOPX0tRO43Be-Oc1m_m9LZzPbRwqBlnT9e126z75Xtu8X38zZCn3gtuPNYUSpGfD-4W&usqp=CAc",
+      "rating": {
+        "rate": 4.1,
+        "count": 316
+      }
+    },
+    {
+      "id": "HKP4NPU9",
+      "brand": "ZARA",
+      "title": "ZARA Classic Watch",
+      "price": 324.99,
+      "description": "ZARA Classic Watch. A sophisticated classic watch with timeless design elements, reliable performance, and elegant detailing suitable for everyday and formal wear.",
+      "category": "accessories",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj0PT03TEGxeCLmtiWTlpOnfZUY5U9CmZOKg&s",
+      "rating": {
+        "rate": 4.2,
+        "count": 328
+      }
+    },
+    {
+      "id": "IALFSHW4",
+      "brand": "GUCCI",
+      "title": "GUCCI Men's Graphic T-Shirt",
+      "price": 339.99,
+      "description": "GUCCI Men's Graphic T-Shirt. A premium graphic T-shirt crafted from soft breathable cotton with a modern fit. Features high-quality printed artwork, comfortable all-day wear, and durable stitching that makes it ideal for casual outings and everyday styling.",
+      "category": "men's clothing",
+      "image": "https://runwaycatalog.in/wp-content/uploads/2021/01/14_1_12.png.webp",
+      "rating": {
+        "rate": 4.3,
+        "count": 340
+      }
+    },
+    {
+      "id": "V7ZVC7Q6",
+      "brand": "PRADA",
+      "title": "PRADA Men's Polo Shirt",
+      "price": 354.99,
+      "description": "PRADA Men's Polo Shirt. A classic polo shirt designed with a refined collar, breathable fabric, and a comfortable tailored fit. Perfect for smart-casual occasions, office wear, or weekend outings.",
+      "category": "men's clothing",
+      "image": "https://runwaycatalog.in/wp-content/uploads/2025/02/7426c6dc-1.jpg.webp",
+      "rating": {
+        "rate": 4.4,
+        "count": 352
+      }
+    },
+    {
+      "id": "P2MO3IJ2",
+      "brand": "Calvin Klein",
+      "title": "Calvin Klein Men's Slim Fit Shirt",
+      "price": 369.99,
+      "description": "Calvin Klein Men's Slim Fit Shirt. A stylish slim-fit shirt tailored for a sharp silhouette. Made from lightweight fabric with a polished finish, offering comfort, versatility, and a sophisticated look.",
+      "category": "men's clothing",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTNtgmEEOyy4SkyegKLn5_tXCzEIeAA_s3Aj11RsjtMFCTg2097_YNupioiJr83-dAh6imaB_IQRNL4qfIpk7ztbSh3tbZBs-Qjvfo3A1I61kMG82wC_dbd&usqp=CAc",
+      "rating": {
+        "rate": 4.5,
+        "count": 364
+      }
+    },
+    {
+      "id": "2V3HJ1Q7",
+      "brand": "H&M",
+      "title": "H&M Men's Denim Jacket",
+      "price": 384.99,
+      "description": "H&M Men's Denim Jacket. A timeless denim jacket featuring durable construction, comfortable lining, and versatile styling. Ideal for layering through every season while adding a fashionable edge.",
+      "category": "men's clothing",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRZ2zuWeFWUmOdjkl2oS-FFJHZPBP27jUmdZ63KG7d9vkzwiPnG9RG6sz8TCIaS7mCgZk7hWZal57I1Ylo3NEqrZl1Cc5kq_YQAf8yKij9VZ-sdErCSJUeB-Ikde6nlAhLDfmGu9g&usqp=CAc",
+      "rating": {
+        "rate": 4.6,
+        "count": 376
+      }
+    },
+    {
+      "id": "XPLG64HA",
+      "brand": "VERSACE",
+      "title": "VERSACE Women's Summer Dress",
+      "price": 399.99,
+      "description": "VERSACE Women's Summer Dress. A lightweight summer dress designed for comfort and elegance. Features breathable fabric, a flattering fit, and a stylish design suitable for vacations, brunches, and special occasions.",
+      "category": "women's clothing",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQdwVMDYhz_HdZ4o5BEdWbJajniKoTLm4JXBq_S5kb6cIOsEP2WbVl6QwKE7lR1K146rv63vTWRqR_my0VnKvkPlLXfbQNitkJ3N2kmTfknT8QC4pRulwlhidcFMlmFUTtisti0rwsd9w&usqp=CAc",
+      "rating": {
+        "rate": 4.7,
+        "count": 388
+      }
+    },
+    {
+      "id": "MZMC2OT1",
+      "brand": "ZARA",
+      "title": "ZARA Women's Floral Dress",
+      "price": 414.99,
+      "description": "ZARA Women's Floral Dress. A beautifully designed floral dress with vibrant patterns and a comfortable silhouette. Perfect for casual gatherings, daytime events, and seasonal wear.",
+      "category": "women's clothing",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT7EZkDQYUn-dFuQilz21odMn1SLkn1QuNF3zqRGMan5hAGi7wNpdEdy75gAf48QyrhTY8d9EdJiTyBknTG6d_RpyTesQxsXfDx5aNe-8I0iF4ddY-JmwRJGLt1Ye6VN_MHpjups-7y&usqp=CAc",
+      "rating": {
+        "rate": 4.8,
+        "count": 400
+      }
+    },
+    {
+      "id": "HDLSRTLQ",
+      "brand": "GUCCI",
+      "title": "GUCCI Women's Oversized Blazer",
+      "price": 429.99,
+      "description": "GUCCI Women's Oversized Blazer. A contemporary oversized blazer featuring structured tailoring and premium fabric. Offers a sophisticated look that transitions effortlessly from workwear to evening fashion.",
+      "category": "women's clothing",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSg-Vyxr9b9PzCETkenj7MvD8e0EyqAV38T3RfMxIL2LuxyTxPUvkodUyQH3_zeZQKK3nYM-9U8G4j_PuaksKcz-8RAgbpw8xYXJUadon1IZCtqFVyWryt-ZiZoOPqUwpvcWv_hSEI&usqp=CAc",
+      "rating": {
+        "rate": 4.9,
+        "count": 412
+      }
+    },
+    {
+      "id": "R1IGA06Y",
+      "brand": "PRADA",
+      "title": "PRADA Women's Knit Sweater",
+      "price": 444.99,
+      "description": "PRADA Women's Knit Sweater. A soft knit sweater crafted for warmth, comfort, and everyday versatility. Features a cozy texture and modern fit suitable for cooler weather.",
+      "category": "women's clothing",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSwocHBxR5BB7Fl-ImymlTSwh_DQK2RL8HuA9T6AUI8QXwkK2iaciGcprgIi1PjlYcTqM4g0eRTZnTM5vvqG6F151UzZlOWD3vdiQXtdFJv6ufu9ObQTUBv",
+      "rating": {
+        "rate": 4.1,
+        "count": 424
+      }
+    },
+    {
+      "id": "RFEPZIUZ",
+      "brand": "Calvin Klein",
+      "title": "Calvin Klein Leather Shoulder Bag",
+      "price": 459.99,
+      "description": "Calvin Klein Leather Shoulder Bag. An elegant leather shoulder bag with spacious compartments and premium craftsmanship. Designed to combine style, durability, and practical everyday storage.",
+      "category": "bags",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRHVZwOjs41kXcjPy5ocIo8NBPwmEq2oYgvhQIUgCRzMD9raO8q2nkbAfqdfpFDGPcLSbEtoB5ptRXiITo5onvc2l6qqAjP8A8TbtLOC5S8MzjPs0CDiIq9sw",
+      "rating": {
+        "rate": 4.2,
+        "count": 436
+      }
+    },
+    {
+      "id": "OJU2IPCV",
+      "brand": "H&M",
+      "title": "H&M Luxury Handbag",
+      "price": 474.99,
+      "description": "H&M Luxury Handbag. A luxury handbag featuring premium materials, refined detailing, and a spacious interior. An ideal accessory for elevating both casual and formal outfits.",
+      "category": "bags",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-IKO24hEX_5QrriskhcjEcMzoPaydgTeDw&s",
+      "rating": {
+        "rate": 4.3,
+        "count": 448
+      }
+    },
+    {
+      "id": "GCIZRRO4",
+      "brand": "VERSACE",
+      "title": "VERSACE Travel Backpack",
+      "price": 489.99,
+      "description": "VERSACE Travel Backpack. A durable travel backpack with multiple storage compartments, comfortable straps, and a lightweight design. Perfect for commuting, travel, and daily use.",
+      "category": "bags",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSUYRPSgLKzmtV8qGWlc3scYESHzMVDnwqN6DQ-5eBiSZPHBxVReXW1rKmrvaAmzmY3Tit22J56oi-BdioHdBRlZ1vuYxCFigV9izNy5NpHyXkWKrfgNC_DPqOZF4Ckb1tM3mb44Q&usqp=CAc",
+      "rating": {
+        "rate": 4.4,
+        "count": 460
+      }
+    },
+    {
+      "id": "PBL68LRR",
+      "brand": "ZARA",
+      "title": "ZARA Classic Tote Bag",
+      "price": 504.99,
+      "description": "ZARA Classic Tote Bag. A versatile tote bag designed with ample storage space and sturdy handles. Suitable for shopping, work, travel, and everyday essentials.",
+      "category": "bags",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVub_z2bqtC8BY7h_5yxdHciPdLVsv8hvSVA&s",
+      "rating": {
+        "rate": 4.5,
+        "count": 472
+      }
+    },
+    {
+      "id": "T5JEDLV1",
+      "brand": "GUCCI",
+      "title": "GUCCI Casual Sneakers",
+      "price": 519.99,
+      "description": "GUCCI Casual Sneakers. Comfortable casual sneakers featuring cushioned support, durable construction, and modern styling. Ideal for daily wear and active lifestyles.",
+      "category": "footwear",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSsjd9sdOazWF7aSkwdrQKuPgqhU1zqHPG23k4drda32Ya4QlBUc_2yLpr8_jtAY11RupL2Xw84EUEfygebNN-tEIO_UiYiY1xmdWYPdqZDkFJnOHcGdp4n8Ha_YGOnINSEKIBxAA8&usqp=CAc",
+      "rating": {
+        "rate": 4.6,
+        "count": 484
+      }
+    },
+    {
+      "id": "HPUF84JV",
+      "brand": "PRADA",
+      "title": "PRADA Running Shoes",
+      "price": 534.99,
+      "description": "PRADA Running Shoes. Performance-inspired running shoes with responsive cushioning, breathable materials, and reliable traction for enhanced comfort and movement.",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/814FaNu4YDL._AC_UY1000_.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 496
+      }
+    },
+    {
+      "id": "VARX38LM",
+      "brand": "Calvin Klein",
+      "title": "Calvin Klein Leather Loafers",
+      "price": 549.99,
+      "description": "Calvin Klein Leather Loafers. Premium leather loafers crafted with attention to detail and lasting comfort. Perfect for business attire, formal occasions, and smart-casual looks.",
+      "category": "footwear",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ1WfS1TVNGPtoFbflGBsuLbK_kXHTVr9OXBEri1I67AjQf4G8nxBJaofPgXF05qDLdR_AgUHgoHs9qHuqrnbVXMFxdsjjOs1jwYVlOgXTptQCwKawV9mp5VyKElOsqQh6U9rjb9DY&usqp=CAc",
+      "rating": {
+        "rate": 4.8,
+        "count": 508
+      }
+    },
+    {
+      "id": "53IW0USH",
+      "brand": "H&M",
+      "title": "H&M Fashion Sandals",
+      "price": 564.99,
+      "description": "H&M Fashion Sandals. Stylish fashion sandals designed for comfort and effortless elegance. Features supportive construction and versatile styling for warm-weather wear.",
+      "category": "footwear",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRSwaubpBfI96lilQA9cjX22c_9pHpiKP_1TYBxRs6Vd2vQb46bFRvYcUnPtTyGY72tr5sgari5V2x0wzwTQN0-glg3qgVzHAKia0CdoqyTdcOdjH-tgfuT&usqp=CAc",
+      "rating": {
+        "rate": 4.9,
+        "count": 520
+      }
+    },
+    {
+      "id": "VZ46VTHL",
+      "brand": "VERSACE",
+      "title": "VERSACE Leather Belt",
+      "price": 579.99,
+      "description": "VERSACE Leather Belt. A genuine leather belt crafted with premium materials and a durable buckle. Designed to complement both casual and formal wardrobes.",
+      "category": "accessories",
+      "image": "https://www.mytheresa.com/image/1094/1238/100/3e/P00404818.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 532
+      }
+    },
+    {
+      "id": "QG6VZFTY",
+      "brand": "ZARA",
+      "title": "ZARA Designer Sunglasses",
+      "price": 594.99,
+      "description": "ZARA Designer Sunglasses. Fashion-forward designer sunglasses offering UV protection, lightweight comfort, and a sophisticated look suitable for any season.",
+      "category": "accessories",
+      "image": "https://static.zara.net/assets/public/5fe4/6ae3/288444ac8005/db66051092af/02750406760-000-a1/02750406760-000-a1.jpg?ts=1772786703891",
+      "rating": {
+        "rate": 4.2,
+        "count": 544
+      }
+    },
+    {
+      "id": "KDXKWUN0",
+      "brand": "GUCCI",
+      "title": "GUCCI Premium Wallet",
+      "price": 609.99,
+      "description": "GUCCI Premium Wallet. A premium wallet featuring organized compartments, durable craftsmanship, and a sleek profile that combines practicality with refined style.",
+      "category": "accessories",
+      "image": "https://rigilclothing.in/wp-content/uploads/2023/02/IMG-20230213-WA0098-jpg.webp",
+      "rating": {
+        "rate": 4.3,
+        "count": 556
+      }
+    },
+    {
+      "id": "ZMG9M2Y9",
+      "brand": "PRADA",
+      "title": "PRADA Classic Watch",
+      "price": 624.99,
+      "description": "PRADA Classic Watch. A sophisticated classic watch with timeless design elements, reliable performance, and elegant detailing suitable for everyday and formal wear.",
+      "category": "accessories",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4nSJmEc0O_1c0MuJkfgG-lBtKRJwm0RjUQ&s",
+      "rating": {
+        "rate": 4.4,
+        "count": 568
+      }
+    },
+    {
+      "id": "BQRVH88G",
+      "brand": "Calvin Klein",
+      "title": "Calvin Klein Men's Graphic T-Shirt",
+      "price": 639.99,
+      "description": "Calvin Klein Men's Graphic T-Shirt. A premium graphic T-shirt crafted from soft breathable cotton with a modern fit. Features high-quality printed artwork, comfortable all-day wear, and durable stitching that makes it ideal for casual outings and everyday styling.",
+      "category": "men's clothing",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaGwmqNdOt1Xt_qYSUCN_C8aAAqw98v1VUOA&s",
+      "rating": {
+        "rate": 4.5,
+        "count": 580
+      }
+    },
+    {
+      "id": "CY37C69Z",
+      "brand": "H&M",
+      "title": "H&M Men's Polo Shirt",
+      "price": 654.99,
+      "description": "H&M Men's Polo Shirt. A classic polo shirt designed with a refined collar, breathable fabric, and a comfortable tailored fit. Perfect for smart-casual occasions, office wear, or weekend outings.",
+      "category": "men's clothing",
+      "image": "https://betterbasics.co.in/cdn/shop/files/BetterBasics3560_5b3cda40-8579-4b64-97fc-1fa2d643cbf6.jpg?v=1764754236&width=1000",
+      "rating": {
+        "rate": 4.6,
+        "count": 592
+      }
+    },
+    {
+      "id": "JV284TB7",
+      "brand": "VERSACE",
+      "title": "VERSACE Men's Slim Fit Shirt",
+      "price": 669.99,
+      "description": "VERSACE Men's Slim Fit Shirt. A stylish slim-fit shirt tailored for a sharp silhouette. Made from lightweight fabric with a polished finish, offering comfort, versatility, and a sophisticated look.",
+      "category": "men's clothing",
+      "image": "https://imagescdn.thecollective.in/img/app/product/1/1078975-16681055.jpg?asp=true&crop=700&auto=format",
+      "rating": {
+        "rate": 4.7,
+        "count": 604
+      }
+    },
+    {
+      "id": "HE1WBIH2",
+      "brand": "ZARA",
+      "title": "ZARA Men's Denim Jacket",
+      "price": 684.99,
+      "description": "ZARA Men's Denim Jacket. A timeless denim jacket featuring durable construction, comfortable lining, and versatile styling. Ideal for layering through every season while adding a fashionable edge.",
+      "category": "men's clothing",
+      "image": "https://dhruvkapoor.com/cdn/shop/files/DKFW26-FS-46_1_f33e7cef-1bd1-43c2-8c46-7cfd367dd45e.jpg?v=1771250882&width=1000",
+      "rating": {
+        "rate": 4.8,
+        "count": 616
+      }
+    },
+    {
+      "id": "BM8XR7B2",
+      "brand": "GUCCI",
+      "title": "GUCCI Women's Summer Dress",
+      "price": 699.99,
+      "description": "GUCCI Women's Summer Dress. A lightweight summer dress designed for comfort and elegance. Features breathable fabric, a flattering fit, and a stylish design suitable for vacations, brunches, and special occasions.",
+      "category": "women's clothing",
+      "image": "https://www.wobblywalk.com/cdn/shop/products/blue-chiffon-maternity-dress5_430x.jpg?v=1755126927",
+      "rating": {
+        "rate": 4.9,
+        "count": 628
+      }
+    },
+    {
+      "id": "VKAH79FG",
+      "brand": "PRADA",
+      "title": "PRADA Women's Floral Dress",
+      "price": 714.99,
+      "description": "PRADA Women's Floral Dress. A beautifully designed floral dress with vibrant patterns and a comfortable silhouette. Perfect for casual gatherings, daytime events, and seasonal wear.",
+      "category": "women's clothing",
+      "image": "https://www.mytheresa.com/image/1094/1238/100/66/P01124908.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 640
+      }
+    },
+    {
+      "id": "WSC62MOL",
+      "brand": "Calvin Klein",
+      "title": "Calvin Klein Women's Oversized Blazer",
+      "price": 729.99,
+      "description": "Calvin Klein Women's Oversized Blazer. A contemporary oversized blazer featuring structured tailoring and premium fabric. Offers a sophisticated look that transitions effortlessly from workwear to evening fashion.",
+      "category": "women's clothing",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLeJKDqEK_wihxsIqNpc3s7jgsN0l-cxzK2A&s",
+      "rating": {
+        "rate": 4.2,
+        "count": 652
+      }
+    },
+    {
+      "id": "MZCQS43S",
+      "brand": "H&M",
+      "title": "H&M Women's Knit Sweater",
+      "price": 744.99,
+      "description": "H&M Women's Knit Sweater. A soft knit sweater crafted for warmth, comfort, and everyday versatility. Features a cozy texture and modern fit suitable for cooler weather.",
+      "category": "women's clothing",
+      "image": "https://realartisticpeople.com/cdn/shop/files/For_the_culture_pink_chenille_hoodie.png?v=1761809479&width=960",
+      "rating": {
+        "rate": 4.3,
+        "count": 664
+      }
+    },
+    {
+      "id": "WT8B2HB8",
+      "brand": "VERSACE",
+      "title": "VERSACE Leather Shoulder Bag",
+      "price": 759.99,
+      "description": "VERSACE Leather Shoulder Bag. An elegant leather shoulder bag with spacious compartments and premium craftsmanship. Designed to combine style, durability, and practical everyday storage.",
+      "category": "bags",
+      "image": "https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw94334506/original/90_DBFI040-DVIT2T_KVO41_20_LaMedusaSmallLeatherTop~Handle-Bags-Versace-online-store_2_2.jpg?sw=850&q=85&strip=true",
+      "rating": {
+        "rate": 4.4,
+        "count": 676
+      }
+    },
+    {
+      "id": "VI4HUP31",
+      "brand": "ZARA",
+      "title": "ZARA Luxury Handbag",
+      "price": 774.99,
+      "description": "ZARA Luxury Handbag. A luxury handbag featuring premium materials, refined detailing, and a spacious interior. An ideal accessory for elevating both casual and formal outfits.",
+      "category": "bags",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2023/8/335568434/KJ/LE/QR/192412408/bb1.jpeg",
+      "rating": {
+        "rate": 4.5,
+        "count": 688
+      }
+    }
+  ]
+}
