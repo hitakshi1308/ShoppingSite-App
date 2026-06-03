@@ -1,16 +1,2 @@
-# React + Vite
+Shop.co is a modern e-commerce web application built with React, React Router, and Redux. It offers product browsing, category-based filtering, detailed product pages, shopping cart management, user authentication, and a responsive user interface. The application integrates product data from two APIs: the Fake Store API and a custom local JSON Server database, combining products from both sources into a unified shopping experience. Dynamic routing, centralized state management, and real-time data fetching ensure smooth navigation and efficient performance throughout the application.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
