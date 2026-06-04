@@ -9,41 +9,62 @@ export default function Login() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const handleLogin = (prevData, loginFormData) => {
-    const userEmail = loginFormData.get("email");
-    const userPass = loginFormData.get("password");
+  const handleLogin = (prevData, formData) => {
+    const identifier = formData.get("identifier");
+    const password = formData.get("password");
 
-    if (userEmail === "") {
+    if (!identifier) {
       return {
-        error: "Enter your email",
-        userEmail,
-        userPass,
+        error: "Enter Email or Phone Number",
+        identifier,
+        password,
       };
     }
 
-    if (userPass === "") {
+    if (!password) {
       return {
-        error: "Enter your Password.",
-        userEmail,
-        userPass,
+        error: "Enter Password",
+        identifier,
+        password,
       };
     }
 
-    if (userEmail !== "abc@gmail.com" || userPass !== "12345") {
+    const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    const isPhone = /^[0-9]{10}$/;
+
+    if (!isEmail.test(identifier) && !isPhone.test(identifier)) {
       return {
-        error: "Invalid Credentials.",
-        userEmail,
-        userPass,
+        error: "Enter a valid Email or Phone Number.",
+        identifier,
+        password,
+      };
+    }
+
+    const validEmail = "abc@gmail.com";
+    const validPhone = "9824746058";
+    const validPassword = "abc12345";
+
+    const emailLogin = identifier === validEmail && password === validPassword;
+
+    const phoneLogin = identifier === validPhone && password === validPassword;
+
+    if (!emailLogin && !phoneLogin) {
+      return {
+        error: "Invalid Credentials. Try Again!",
+        identifier,
+        password,
       };
     }
 
     return {
-      success: "Login Successful!!",
-      userEmail,
+      success: "Login Successful!",
+      identifier,
     };
   };
 
   const [data, action, pending] = useActionState(handleLogin, {});
+
   const [showError, setShowError] = useState("");
 
   useEffect(() => {
@@ -58,13 +79,11 @@ export default function Login() {
     }
 
     if (data?.success) {
-      // localStorage.setItem("isLoggedIn", "true");
-
       dispatch(
         login({
           name: "User",
-          email: data.userEmail,
-        })
+          email: data.identifier,
+        }),
       );
 
       setTimeout(() => {
@@ -76,46 +95,43 @@ export default function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h1>Shop.Co</h1>
-
-        <h2>Login</h2>
+        <div className="login-header">
+          <h1>SHOP.CO</h1>
+          <p>Sign in to continue shopping</p>
+        </div>
 
         <form action={action}>
           <input
-            type="email"
-            placeholder="Enter Email"
-            name="email"
-            defaultValue={data?.userEmail}
+            type="text"
+            name="identifier"
+            placeholder="Email or Phone Number"
+            defaultValue={data?.identifier}
           />
 
           <input
             type="password"
-            placeholder="Enter Password"
             name="password"
-            defaultValue={data?.userPass}
+            placeholder="Password"
+            defaultValue={data?.password}
           />
 
           <button disabled={pending}>
-            {pending ? "Loading..." : "Login"}
+            {pending ? "Logging In..." : "Sign In"}
           </button>
 
-          {showError && (
-            <span style={{ color: "red", fontSize: "12px" }}>
-              {showError}
-            </span>
-          )}
+          {showError && <div className="error-msg">{showError}</div>}
 
-          {data?.success && (
-            <span style={{ color: "green", fontSize: "12px" }}>
-              {data.success}
-            </span>
-          )}
+          {data?.success && <div className="success-msg">{data.success}</div>}
         </form>
 
-        <p>
-          Don't have an account?
-          <Link to="/signup"> Sign Up</Link>
-        </p>
+        <div className="login-footer">
+          <Link to="#">Forgot Password?</Link>
+
+          <p>
+            Don't have an account?
+            <Link to="/signup"> Sign Up</Link>
+          </p>
+        </div>
       </div>
     </div>
   );
