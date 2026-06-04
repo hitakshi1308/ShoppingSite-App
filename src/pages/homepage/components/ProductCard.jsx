@@ -7,6 +7,7 @@ export default function ProductCard({item,source}) {
    
     const dispatch = useDispatch()
     const selector = useSelector((state) => state.cart.items)
+    
     return(
         <>
             <img className="product-card-img" src={item.image ? item.image : item.thumbnail} alt={item.title} />

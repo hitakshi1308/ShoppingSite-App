@@ -9,7 +9,7 @@ export default function Login() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const handleLogin = (prevData, formData) => {
+  const handleLogin = async (prevData, formData) => {
     const identifier = formData.get("identifier");
     const password = formData.get("password");
 
@@ -30,37 +30,71 @@ export default function Login() {
     }
 
     const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
     const isPhone = /^[0-9]{10}$/;
 
     if (!isEmail.test(identifier) && !isPhone.test(identifier)) {
       return {
-        error: "Enter a valid Email or Phone Number.",
+        error: "Enter a valid Email or Phone Number",
         identifier,
         password,
       };
     }
 
-    const validEmail = "abc@gmail.com";
-    const validPhone = "9824746058";
-    const validPassword = "abc12345";
+    try {
+      // console.log("Identifier:", identifier);
+      const res = await fetch(
+        `http://localhost:3000/userProtectData?${
+          isNaN(identifier) ? `email=${identifier}` : `phone=${identifier}`
+        }`,
+      );
 
-    const emailLogin = identifier === validEmail && password === validPassword;
+      if (!res.ok) {
+        throw new Error("Failed to fetch user data");
+      }
 
-    const phoneLogin = identifier === validPhone && password === validPassword;
+      const users = await res.json();
+      // console.log("Users:", users);
 
-    if (!emailLogin && !phoneLogin) {
+      if (users.length === 0) {
+        return {
+          error: "User not found",
+          identifier,
+          password,
+        };
+      }
+
+      const user = users[0];
+
+      const validEmail = user.email;
+      const validPhone = String(user.phone);
+      const validPassword = user.password;
+
+      const emailLogin =
+        identifier === validEmail && password === validPassword;
+
+      const phoneLogin =
+        identifier === validPhone && password === validPassword;
+
+      if (!emailLogin && !phoneLogin) {
+        return {
+          error: "Invalid Credentials. Try Again!",
+          identifier,
+          password,
+        };
+      }
+
       return {
-        error: "Invalid Credentials. Try Again!",
+        success: "Login Successful!",
+        identifier,
+        user,
+      };
+    } catch (error) {
+      return {
+        error: error.message || "Something went wrong",
         identifier,
         password,
       };
     }
-
-    return {
-      success: "Login Successful!",
-      identifier,
-    };
   };
 
   const [data, action, pending] = useActionState(handleLogin, {});
@@ -81,8 +115,12 @@ export default function Login() {
     if (data?.success) {
       dispatch(
         login({
-          name: "User",
-          email: data.identifier,
+        id: data.user.id,
+        name: data.user.name,
+        phone: data.user.phone,
+        email: data.user.email,
+        address: data.user.address,
+        createdAt: data.user.createdAt,
         }),
       );
 
@@ -115,9 +153,7 @@ export default function Login() {
             defaultValue={data?.password}
           />
 
-          <button disabled={pending}>
-            {pending ? "Logging In..." : "Sign In"}
-          </button>
+          <button disabled={pending}>Sign In</button>
 
           {showError && <div className="error-msg">{showError}</div>}
 

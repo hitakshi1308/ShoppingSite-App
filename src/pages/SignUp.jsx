@@ -55,10 +55,52 @@ export default function SignUp() {
 
             return errors;
           }}
-          onSubmit={(values, { resetForm }) => {
-            alert("Account Created Successfully!");
-            // console.log(values);
-            resetForm();
+          onSubmit={async (values, { resetForm, setSubmitting }) => {
+            try {
+              const checkUser = await fetch(
+                `http://localhost:3000/userProtectData?email=${values.email}`,
+              );
+
+              const existingUsers = await checkUser.json();
+
+              if (existingUsers.length > 0) {
+                alert("Email already registered.");
+                setSubmitting(false);
+                return;
+              }
+
+              const userData = {
+                userId: String(values.phone),
+                name: values.name.trim(),
+                phone: Number(values.phone),
+                email: values.email.trim().toLowerCase(),
+                password: values.password,
+                address: [],
+                createdAt: new Date().toISOString().replace(".000", ""),
+              };
+              
+              
+              const res = await fetch("http://localhost:3000/userProtectData", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(userData),
+              });
+              // console.log(userData);
+
+              if (!res.ok) {
+                throw new Error("Failed to create account");
+              }
+
+              alert("Account Created Successfully!");
+
+              resetForm();
+            } catch (error) {
+              alert(error.message);
+            } finally {
+              setSubmitting(false);
+            }
           }}
         >
           {({
