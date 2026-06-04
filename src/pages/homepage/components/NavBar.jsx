@@ -93,11 +93,11 @@ function Navbar() {
                     </div>
 
                     <Link to="/profile" className="dropdown-link">
-                      My Profile
+                      Manage Profile
                     </Link>
 
                     <button
-                      className="dropdown-link logout-btn"
+                      className="dropdown-link logout-home"
                       onClick={handleLogout}
                     >
                       Logout

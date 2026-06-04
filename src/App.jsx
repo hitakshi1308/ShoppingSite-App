@@ -12,6 +12,7 @@ import UserProfile from "./pages/homepage/components/UserProfile";
 import Footer from "./pages/homepage/components/Footer";
 import ProductBrand from "./pages/ProductBrands";
 import ShopProducts from "./pages/ShopProduct";
+import EditUserProfile from "./pages/EditUserProfile";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/profile" element={<UserProfile />} />
+        
 
         <Route element={<Navbar />}>
           <Route path="/ShopProducts" element={<ShopProducts />} />
@@ -30,7 +31,11 @@ function App() {
           <Route path="/newArrival" element={<ProductSection />} />
           <Route path="/productcartlist" element={<CartList />} />
           <Route path="/brand/:brandName" element={<ProductBrand />} />
+          <Route path="/profile" element={<UserProfile />} />
+          
         </Route>
+          <Route path="/profile/editProfile" element={<EditUserProfile/>} />
+
       </Routes>
     </>
   );

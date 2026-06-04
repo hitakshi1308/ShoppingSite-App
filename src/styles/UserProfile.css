@@ -60,7 +60,7 @@
 
 .profile-actions {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .edit-btn,
@@ -72,6 +72,8 @@
   font-size: 15px;
   cursor: pointer;
   transition: 0.3s;
+  width: 280px;
+  text-align: center;
 }
 
 .edit-btn {
@@ -80,7 +82,7 @@
 }
 
 .edit-btn:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .logout-btn {
