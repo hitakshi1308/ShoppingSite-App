@@ -7,12 +7,15 @@ export default function SignUp() {
   return (
     <div className="signup-container">
       <div className="signup-box">
-        <h1>Shop.Co</h1>
-        <h2>Create Account</h2>
+        <div className="signup-header">
+          <h1>SHOP.CO</h1>
+          <p>Create your account & Start Shopping.</p>
+        </div>
 
         <Formik
           initialValues={{
             name: "",
+            phone: "",
             email: "",
             password: "",
             confirmPassword: "",
@@ -20,8 +23,14 @@ export default function SignUp() {
           validate={(values) => {
             const errors = {};
 
-            if (!values.name) {
+            if (!values.name.trim()) {
               errors.name = "Name is required.";
+            }
+
+            if (!values.phone) {
+              errors.phone = "Phone number is required.";
+            } else if (!/^[0-9]{10}$/.test(values.phone)) {
+              errors.phone = "Enter a valid 10-digit phone number.";
             }
 
             if (!values.email) {
@@ -46,16 +55,12 @@ export default function SignUp() {
 
             return errors;
           }}
-
           onSubmit={(values, { resetForm }) => {
-            alert("Account Created Successfully");
-
-            console.log(values);
-
+            alert("Account Created Successfully!");
+            // console.log(values);
             resetForm();
           }}
         >
-          
           {({
             values,
             errors,
@@ -70,7 +75,7 @@ export default function SignUp() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Enter Name"
+                  placeholder="Full Name"
                   value={values.name}
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -83,9 +88,24 @@ export default function SignUp() {
 
               <div>
                 <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  value={values.phone}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                />
+
+                {errors.phone && touched.phone && (
+                  <p className="error">{errors.phone}</p>
+                )}
+              </div>
+
+              <div>
+                <input
                   type="email"
                   name="email"
-                  placeholder="Enter Email"
+                  placeholder="Email Address"
                   value={values.email}
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -100,7 +120,7 @@ export default function SignUp() {
                 <input
                   type="password"
                   name="password"
-                  placeholder="Enter Password"
+                  placeholder="Password"
                   value={values.password}
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -127,7 +147,7 @@ export default function SignUp() {
               </div>
 
               <button type="submit" disabled={isSubmitting}>
-                Sign Up
+                Create Account
               </button>
             </form>
           )}
