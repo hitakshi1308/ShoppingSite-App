@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import { login } from "../redux/authSlice";
-
+import { LOCALDB_URL } from "../api/api";
 import "../styles/EditUserProfile.css";
 
 export default function EditUserProfile() {
@@ -44,7 +44,7 @@ export default function EditUserProfile() {
       };
 
       const response = await fetch(
-        `http://localhost:3000/userProtectData/${user.id}`,
+        `${LOCALDB_URL}/userProtectData/${user.id}`,
         {
           method: "PATCH",
           headers: {

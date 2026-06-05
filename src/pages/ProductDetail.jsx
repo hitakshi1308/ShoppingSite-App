@@ -3,7 +3,7 @@ import "../styles/ProductDetail.css";
 import { useEffect, useState } from "react";
 import { useDispatch,useSelector } from "react-redux";
 import { addItem,clearAllItem, } from "../redux/slice";
-
+import { LOCALDB_URL } from "../api/api";
 
 import ProductSection from "./homepage/components/ProductSection";
 
@@ -29,7 +29,7 @@ export default function ProductDetail() {
   if (source === "fakestore") {
     url = `https://fakestoreapi.com/products/${id}`;
   } else {
-    url = `http://localhost:3000/products/${id}`;
+    url = `${LOCALDB_URL}/products/${id}`;
   }
 
   const response = await fetch(url);

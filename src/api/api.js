@@ -1,0 +1,1 @@
+export const API_URL = "https://your-render-service.onrender.com";

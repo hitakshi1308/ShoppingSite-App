@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { Formik } from "formik";
-
+import { LOCALDB_URL } from "../api/api";
 import "../styles/SignUp.css";
 
 export default function SignUp() {
@@ -58,7 +58,7 @@ export default function SignUp() {
           onSubmit={async (values, { resetForm, setSubmitting }) => {
             try {
               const checkUser = await fetch(
-                `http://localhost:3000/userProtectData?email=${values.email}`,
+                `${LOCALDB_URL}/userProtectData?email=${values.email}`,
               );
 
               const existingUsers = await checkUser.json();
@@ -80,7 +80,7 @@ export default function SignUp() {
               };
               
               
-              const res = await fetch("http://localhost:3000/userProtectData", {
+              const res = await fetch(`${LOCALDB_URL}/userProtectData`, {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

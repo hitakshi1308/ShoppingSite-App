@@ -84,7 +84,7 @@ header {
 .brand-dropdown {
   display: none;
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   left: 0;
   background: #fff;
   border: 1px solid #eee;
@@ -191,7 +191,7 @@ header {
 .profile-dropdown {
   display: none;
   position: absolute;
-  top: calc(100% + 12px);
+  top: 100%;
   right: 0;
   background: #fff;
   border: 1px solid #eee;

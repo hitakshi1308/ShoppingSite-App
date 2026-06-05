@@ -1,6 +1,7 @@
 import { useActionState, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
+import { LOCALDB_URL } from "../api/api";
 import { login } from "../redux/authSlice";
 
 import "../styles/Login.css";
@@ -43,7 +44,7 @@ export default function Login() {
     try {
       // console.log("Identifier:", identifier);
       const res = await fetch(
-        `http://localhost:3000/userProtectData?${
+        `${LOCALDB_URL}/userProtectData?${
           isNaN(identifier) ? `email=${identifier}` : `phone=${identifier}`
         }`,
       );

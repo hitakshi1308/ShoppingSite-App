@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import "../styles/ProductSection.css";
 import ProductCard from "./homepage/components/ProductCard";
 import { useEffect, useState } from "react";
+import { LOCALDB_URL } from "../api/api";
 
 export default function ProductBrand() {
   const params = useParams();
@@ -14,7 +15,7 @@ export default function ProductBrand() {
 
 //   console.log(params.brandName);
   const getProducts = async() =>{
-    const url = 'http://localhost:3000/products'
+    const url = `${LOCALDB_URL}/products`
 
     let response = await fetch(url);
      response = await response.json();
