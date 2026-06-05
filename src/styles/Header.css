@@ -84,7 +84,7 @@ header {
 .brand-dropdown {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 10px);
   left: 0;
   background: #fff;
   border: 1px solid #eee;
@@ -139,6 +139,7 @@ header {
   background: #fff;
 }
 
+/* ── Cart + Contact ── */
 .cart-contact {
   display: flex;
   align-items: center;
@@ -190,7 +191,7 @@ header {
 .profile-dropdown {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 12px);
   right: 0;
   background: #fff;
   border: 1px solid #eee;
@@ -297,4 +298,276 @@ header {
   .signup-section {
     font-size: 11px;
   }
+}
+
+
+/* ===== SIDEBAR ===== */
+
+/* ── Hamburger Button (hidden on desktop) ── */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 1100;
+}
+
+.hamburger-btn span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  border-radius: 2px;
+  transition: transform 0.2s;
+}
+
+/* ── Overlay ── */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1100;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Sidebar Panel ── */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 300px;
+  max-width: 85vw;
+  background: #fff;
+  z-index: 1200;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.12);
+}
+
+.sidebar.sidebar-open {
+  transform: translateX(0);
+}
+
+/* ── Sidebar Header ── */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+.sidebar-logo {
+  font-size: 20px;
+  font-weight: 900;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.sidebar-close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.15s;
+}
+
+.sidebar-close-btn:hover {
+  background: #f0f0f0;
+  color: #000;
+}
+
+/* ── User Greeting ── */
+.sidebar-user {
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+/* ── Nav Links ── */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  flex: 1;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 13px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+  transition: background 0.15s;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.sidebar-link:hover {
+  background: #f5f5f5;
+}
+
+/* ── Accordion (Shop / Brands) ── */
+.sidebar-accordion {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.sidebar-accordion-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 13px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.sidebar-accordion-btn:hover {
+  background: #f5f5f5;
+}
+
+.sidebar-arrow {
+  font-size: 18px;
+  font-weight: 400;
+  color: #888;
+  transition: transform 0.2s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.sidebar-arrow.open {
+  transform: rotate(90deg);
+}
+
+.sidebar-accordion-body {
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+  border-top: 1px solid #efefef;
+}
+
+.sidebar-accordion-body a {
+  display: block;
+  padding: 11px 20px 11px 36px;
+  font-size: 14px;
+  color: #444;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar-accordion-body a:last-child {
+  border-bottom: none;
+}
+
+.sidebar-accordion-body a:hover {
+  background: #efefef;
+  color: #000;
+}
+
+/* ── Auth Buttons ── */
+.sidebar-auth {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 20px 28px;
+  border-top: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+.sidebar-auth-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-auth-btn.filled {
+  background: #000;
+  color: #fff;
+}
+
+.sidebar-auth-btn.filled:hover {
+  background: #222;
+}
+
+.sidebar-auth-btn.outline {
+  background: #fff;
+  color: #000;
+  border: 1.5px solid #000;
+}
+
+.sidebar-auth-btn.outline:hover {
+  background: #000;
+  color: #fff;
+}
+
+.sidebar-auth-btn.danger {
+  background: #fff0f0;
+  color: #c0392b;
+  border: 1.5px solid #f5c6c6;
+}
+
+.sidebar-auth-btn.danger:hover {
+  background: #c0392b;
+  color: #fff;
+  border-color: #c0392b;
+}
+
+/* ── Show hamburger on mobile ── */
+@media (max-width: 680px) {
+  .hamburger-btn {
+    display: flex;
+  }
+}
+
+/* ── All Products link inside sidebar shop accordion ── */
+.sidebar-accordion-body a.sidebar-all-products {
+  padding-left: 20px;
+  font-weight: 700;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+  background: #f0f0f0;
+}
+
+.sidebar-accordion-body a.sidebar-all-products:hover {
+  background: #e0e0e0;
 }
