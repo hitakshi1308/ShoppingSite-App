@@ -1,35 +1,105 @@
+/* ===== OFFER / NEWSLETTER SECTION ===== */
+
 .offer-section {
-  margin: 60px;
-  background: black;
-  color: white;
-  border-radius: 25px;
-  padding: 50px;
+  background: #000;
+  color: #fff;
+  padding: 60px 60px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  border-radius: 24px;
+  margin: 0 60px 80px;
 }
 
 .offer-text {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: clamp(22px, 3.5vw, 40px);
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex: 1;
+  min-width: 240px;
 }
 
+/* ── Email Input Area ── */
 .mail-box {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 14px;
+  flex: 1;
+  min-width: 260px;
+  max-width: 440px;
 }
 
 .mail-box input {
-  width: 350px;
-  padding: 15px;
-  border-radius: 30px;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 32px;
   border: none;
+  font-size: 14px;
+  outline: none;
+  background: #1a1a1a;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+.mail-box input::placeholder {
+  color: #888;
+}
+
+.mail-box input:focus {
+  background: #222;
 }
 
 .mail-box button {
-  padding: 15px;
-  border-radius: 30px;
+  width: 100%;
+  padding: 14px 24px;
+  border-radius: 32px;
   border: none;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
+  letter-spacing: 0.3px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.mail-box button:hover {
+  background: #e0e0e0;
+  transform: translateY(-1px);
+}
+
+/* ── Tablet ── */
+@media (max-width: 900px) {
+  .offer-section {
+    padding: 48px 32px;
+    margin: 0 24px 60px;
+    gap: 32px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+  .offer-section {
+    flex-direction: column;
+    padding: 36px 20px;
+    margin: 0 12px 48px;
+    border-radius: 16px;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .offer-text {
+    min-width: unset;
+    font-size: clamp(20px, 5.5vw, 28px);
+  }
+
+  .mail-box {
+    width: 100%;
+    max-width: 100%;
+    min-width: unset;
+  }
 }

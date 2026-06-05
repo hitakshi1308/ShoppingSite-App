@@ -49,26 +49,25 @@ function HeroSection() {
       </div>
 
       <div className="main-image">
-  <Carousel autoplay autoplaySpeed={4000}>
+        <Carousel autoplay autoplaySpeed={4000}>
+          <div>
+              <img src={image1} alt="banner" className="carousel-image" />
+              </div>
 
-    <div>
-      <img src={image1} alt="banner" className="carousel-image" />
-    </div>
+              <div>
+                <img src={image2} alt="banner" className="carousel-image" />
+              </div>
 
-    <div>
-      <img src={image2} alt="banner" className="carousel-image" />
-    </div>
+              <div>
+                <img src={image3} alt="banner" className="carousel-image" />
+              </div>
 
-    <div>
-      <img src={image3} alt="banner" className="carousel-image" />
-    </div>
+              <div>
+                <img src={image4} alt="banner" className="carousel-image" />
+              </div>
 
-    <div>
-      <img src={image4} alt="banner" className="carousel-image" />
-    </div>
-
-  </Carousel>
-</div>
+            </Carousel>
+      </div>
     </section>
   );
 }

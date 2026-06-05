@@ -1,71 +1,210 @@
+/* ===== PRODUCT DETAIL ===== */
+
 .product-container {
   display: flex;
-  gap: 40px;
-  padding: 40px;
-  max-width: 1000px;
-  margin: auto;
-  background: #fff;
-  border-radius: 10px;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 60px 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* ── Image Side ── */
+.product-image {
+  flex: 1;
+  min-width: 260px;
+  max-width: 420px;
+  position: sticky;
+  top: 90px;
+  align-self: flex-start;
 }
 
 .product-image img {
-  width: 400px;
-  border-radius: 10px;
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #f7f7f7;
+  padding: 24px;
 }
 
+/* ── Details Side ── */
 .product-details {
   flex: 1;
+  min-width: 260px;
 }
 
 .product-details h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: clamp(20px, 2.8vw, 30px);
+  font-weight: 800;
+  color: #000;
+  line-height: 1.3;
+  margin-bottom: 16px;
 }
 
 .product-price {
-  font-size: 24px;
-  color: #e53935;
-  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 20px;
 }
 
 .description {
-  color: #555;
-  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 28px;
 }
 
+/* ── Quantity Controls ── */
 .quantity {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  gap: 12px;
+  margin-bottom: 28px;
 }
 
 .quantity button {
-  width: 35px;
-  height: 35px;
-  border: none;
-  background: #ddd;
-  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #ddd;
+  background: #fff;
   font-size: 18px;
-}
-
-.quantity input {
-  width: 50px;
-  text-align: center;
-  margin: 0 10px;
-  height: 35px;
-}
-
-.buttons button {
-  padding: 12px 20px;
-  margin-right: 10px;
+  font-weight: 600;
   cursor: pointer;
-  border-radius: 5px;
-  background-color: white;
-  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border-color 0.15s;
+  flex-shrink: 0;
 }
 
-.buttons button:hover{
-  color: white;
-  background-color: rgb(0, 0, 0);
+.quantity button:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
 }
 
+.quantity input[type="number"] {
+  width: 60px;
+  text-align: center;
+  padding: 8px 6px;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  -moz-appearance: textfield;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.quantity input:focus {
+  border-color: #000;
+}
+
+/* ── Action Buttons ── */
+.buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.add-cart {
+  flex: 1;
+  min-width: 140px;
+  padding: 14px 24px;
+  border: 2px solid #000;
+  border-radius: 14px;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.add-cart:hover {
+  background: #000;
+  color: #fff;
+}
+
+.buy-now {
+  flex: 1;
+  min-width: 140px;
+  padding: 14px 24px;
+  border: 2px solid #000;
+  border-radius: 14px;
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.buy-now:hover {
+  background: #222;
+}
+
+/* ── Tablet ── */
+@media (max-width: 860px) {
+  .product-container {
+    padding: 40px 32px;
+    gap: 40px;
+  }
+
+  .product-image {
+    position: static;
+    max-width: 100%;
+  }
+
+  .product-image img {
+    height: 320px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .product-container {
+    flex-direction: column;
+    padding: 24px 16px 48px;
+    gap: 24px;
+  }
+
+  .product-image {
+    min-width: unset;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .product-image img {
+    height: 240px;
+    padding: 16px;
+  }
+
+  .product-details {
+    min-width: unset;
+  }
+
+  .product-price {
+    font-size: 22px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .add-cart,
+  .buy-now {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}

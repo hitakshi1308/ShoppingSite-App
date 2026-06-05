@@ -1,5 +1,5 @@
 .profile-page {
-  min-height: 100vh;
+  min-height: 90vh;
   background: #f5f6fa;
   display: flex;
   justify-content: center;
@@ -61,10 +61,10 @@
 .profile-actions {
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 
-.edit-btn,
-.logout-btn {
+.edit-btn {
   flex: 1;
   padding: 12px;
   border: none;
@@ -72,24 +72,14 @@
   font-size: 15px;
   cursor: pointer;
   transition: 0.3s;
-  width: 280px;
   text-align: center;
 }
 
 .edit-btn {
-  background: black;
+  background: #e63946;
   color: white;
 }
 
 .edit-btn:hover {
-  opacity: 0.8;
-}
-
-.logout-btn {
   background: #ff4d4f;
-  color: white;
-}
-
-.logout-btn:hover {
-  background: #e63946;
 }

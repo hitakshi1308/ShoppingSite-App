@@ -48,7 +48,7 @@ function UserProfile() {
 
         <div className="profile-details">
           <div className="detail-item">
-            <label>Full Name</label>
+            <label>Name</label>
             <span>{user.name}</span>
           </div>
 
@@ -78,13 +78,6 @@ function UserProfile() {
               Edit Profile
             </button>
           </Link>
-
-          <button
-            className="logout-btn"
-            onClick={handleLogout}
-          >
-            Logout
-          </button>
         </div>
       </div>
     </div>

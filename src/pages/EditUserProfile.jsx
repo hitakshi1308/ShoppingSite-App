@@ -101,7 +101,7 @@ export default function EditUserProfile() {
             <input
               type="text"
               name="name"
-              placeholder="Enter your full name"
+              placeholder="Enter your Name"
               value={formData.name}
               onChange={handleChange}
             />

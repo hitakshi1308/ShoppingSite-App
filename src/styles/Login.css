@@ -1,121 +1,119 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ===== LOGIN ===== */
 
 .login-container {
   min-height: 100vh;
-  width: 100%;
-  background: linear-gradient(
-    135deg,
-    #f8fafc,
-    #eef2ff,
-    #f5f7fa
-  );
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
+  justify-content: center;
+  background: #f5f5f5;
+  padding: 20px 16px;
 }
 
 .login-box {
-  width: 100%;
-  width: 400px;
   background: #fff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow:
-    0 15px 35px rgba(0, 0, 0, 0.08),
-    0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: 0.3s ease;
+  border-radius: 20px;
+  padding: 44px 40px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.1);
 }
 
-.login-box:hover {
-  transform: translateY(-3px);
-}
-
+/* ── Header ── */
 .login-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .login-header h1 {
-  font-size: 32px;
-  font-weight: 800;
-  color: #111827;
+  font-size: 28px;
+  font-weight: 900;
+  color: #000;
   letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 
 .login-header p {
-  color: #6b7280;
-  margin-top: 8px;
-  font-size: 15px;
+  font-size: 14px;
+  color: #888;
 }
 
+/* ── Form ── */
 .login-box form {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 14px;
 }
 
-.login-box input {
+.login-box form input {
   width: 100%;
-  padding: 14px 16px;
-  border: 1px solid #d1d5db;
-  border-bottom: 2px solid black;
-  border-radius: 10px;
-  font-size: 15px;
+  padding: 13px 18px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 14px;
   outline: none;
-  transition: all 0.3s ease;
+  transition: border-color 0.2s;
+  background: #fafafa;
+  color: #000;
 }
 
-.login-box input:focus {
-  outline: none;
+.login-box form input:focus {
+  border-color: #000;
+  background: #fff;
 }
 
-.login-box button {
+.login-box form button {
   width: 100%;
-  padding: 14px;
-  border: none;
-  border-radius: 10px;
+  padding: 13px;
   background: #000;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: background 0.2s;
+  margin-top: 4px;
 }
 
-.login-box button:hover {
+.login-box form button:hover:not(:disabled) {
   background: #222;
 }
 
-.login-box button:disabled {
-  opacity: 0.5;
+.login-box form button:disabled {
+  background: #999;
   cursor: not-allowed;
 }
 
+/* ── Messages ── */
 .error-msg {
-  background: #fee2e2;
-  color: #dc2626;
-  padding: 12px;
+  background: #fff0f0;
+  color: #c0392b;
+  border: 1px solid #f5c6c6;
   border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
   text-align: center;
-  font-size: 14px;
 }
 
 .success-msg {
-  background: #dcfce7;
-  color: #16a34a;
-  padding: 12px;
+  background: #f0fff4;
+  color: #27ae60;
+  border: 1px solid #b2dfdb;
   border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
   text-align: center;
-  font-size: 14px;
 }
 
+/* ── Footer Links ── */
 .login-footer {
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+  font-size: 13px;
+  color: #666;
 }
 
 .login-footer a {
@@ -129,59 +127,23 @@
 }
 
 .login-footer p {
-  margin-top: 20px;
-  color: #4b5563;
   text-align: center;
-
 }
 
-
-@media (max-width: 768px) {
-  .login-box {
-    max-width: 420px;
-    padding: 32px;
-  }
-
-  .login-header h1 {
-    font-size: 28px;
-  }
-}
-
+/* ── Mobile ── */
 @media (max-width: 480px) {
-  .login-container {
-    padding: 15px;
-  }
-
   .login-box {
-    padding: 25px;
+    padding: 32px 20px;
     border-radius: 16px;
   }
 
   .login-header h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
-  .login-header p {
-    font-size: 14px;
-  }
-
-  .login-box input {
-    padding: 13px;
-    font-size: 14px;
-  }
-
-  .login-box button {
-    padding: 13px;
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .login-box {
-    max-width: 470px;
-  }
-
-  .login-header h1 {
-    font-size: 36px;
+  .login-box form input,
+  .login-box form button {
+    padding: 11px 14px;
+    font-size: 13px;
   }
 }

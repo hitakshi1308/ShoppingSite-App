@@ -117,7 +117,7 @@ export default function SignUp() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Full Name"
+                  placeholder="Name"
                   value={values.name}
                   onChange={handleChange}
                   onBlur={handleBlur}
